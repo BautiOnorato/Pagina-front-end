@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header section {
+    background-color: #222222;
+    max-height: 20px;
+    color: #F3F3F3;
+}
+
+header section p {
+    display: inline-block;
+    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 4px 1600px 4px 90px;
+}
+
+header section span {
+    padding: 4px 0 4px 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header nav {
+    height: 62px;
+    background-color: #F0A83E;
+}
+
+header nav img{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 1124px;
+    padding-top: 20px;
+}
+
+header nav ul {
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding-left: 36px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header nav ul li a i{
+    color: #F0A83E;
+    text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff;
+}
+
+/* Termina el header, arranca el main */
+/* Seccion banner */
+
+.banner {
+    height: 409px;
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+
+.banner div {
+    display: inline-block;
+    margin: 115px 11px 0 1550px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.banner div p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #3C2313;
+}
+
+.banner .parrafo-2-banner {
+    margin-left: 1370px;
+    margin-top: 36px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #3C2313;
+}
+
+.banner a {
+    display: inline-block;
+    background: #F0A83E;
+    padding: 15px 23px 15px 23px;
+    margin-left: 1660px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Seccion productos */
+
+.productos div {
+    text-align: center;
+    margin: 10px;
+}
+
+.productos h1 {
+    text-align: center;
+    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    color: #3C2313;
+}
+
+.productos ul {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.productos ul li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.productos ul li a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.productos .articulos {
+    text-align: center;
+}
+
+.productos .articulos article {
+    display: inline-block;
+    padding: 50px;
+    margin: 100px 15px 0 15px;
+    background-color: #FBFAF6; 
+}
+
+.productos .articulos article h4 {
+    margin-bottom: 18px;
+    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #3C2313
+}
+
+.productos .articulos article p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F0A83E;
+}
+
+/* Seccion contacto */
+
+.contacto {
+    margin-top: 100px;
+}
+
+.contacto h2 {
+    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 29px;
+    color: #3C2313;
+    text-align: center;
+}
+
+.contacto .formulario {
+    margin: 40px 39%;
+}
+
+.contacto .formulario input {
+    display: block;
+    padding: 15px 300px 15px 15px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #ffffff;
+    background-color: #3C2313;
+    border-radius: 15px;
+    border: 0;
+}
+
+.contacto .formulario input::placeholder {
+    color: #ffffff;
+    opacity: .8;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.contacto .submit-reset {
+    text-align: center;
+}
+
+.contacto .submit-reset input{
+    padding: 12px 32px 12px 32px;
+    margin: 15px 10px;
+    background-color: #8A8787;
+    border-radius: 18px;
+    border: 0px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.contacto .submit-reset input:nth-child(2) {
+    background-color: #F0A83E;
+}
+
+/* Seccion correo */
+
+.correo {
+    background-color: #F0A83E;
+    margin-top: 50px;
+}
+
+.correo div {
+    display: inline-block;
+    padding: 20px 0 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.correo div img {
+    display: inline-block;
+    width: 60px;
+}
+
+.correo p {
+    display: inline-block;
+    margin-right: 900px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.correo input {
+    display: inline-block;
+}
+
+.correo input[type=email] {
+    padding: 15px 240px 15px 15px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0A0A0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 0;
+}
+
+.correo input[type=submit] {
+    padding: 12px 25px 12px 25px;
+    margin: 15px 10px;
+    background-color: #3C2313;;
+    border-radius: 18px;
+    border: 0px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* seccion datos */
+
+.datos {
+    background-color: #3C2313;
+    padding-top: 15px;
+    padding-left: 30px;
+    max-height: 300px;
+}
+
+.datos .datos-texto {
+    display: inline-block
+}
+
+.datos .datos-texto p {
+    position: relative;
+    bottom: 20px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;  
+    color: #8A8787;
+}
+
+.datos .datos-texto span {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.datos .datos-logo {
+    position: relative;
+    margin-left: 1700px;
+    bottom: 170px;
+}
+
+.datos-logo img {
+    width: 200px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222222;
+}
+
+footer .redes {
+    text-align: center;
+    padding: 10px;
+}
+
+footer .redes a {
+    padding: 0 50px 0 50px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
