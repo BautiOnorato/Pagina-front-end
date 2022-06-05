@@ -235,7 +235,7 @@ header nav ul li a i{
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
-  opacity: 0;
+    opacity: 0;
 }
 
 .contacto .submit-reset {
@@ -370,7 +370,7 @@ footer .redes {
 }
 
 footer .redes a {
-    padding: 0 50px 0 50px;
+    margin: 0 50px;
     font-size: 40px;
     color: #ffffff;
 }
