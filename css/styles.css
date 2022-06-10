@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url(../fonts/Roboto-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Medium.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,358 +6,378 @@
     padding: 0;
 }
 
-header section {
+.primer-header {
+    display: flex;
     background-color: #222222;
-    max-height: 20px;
     color: #F3F3F3;
-}
-
-header section p {
-    display: inline-block;
-    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding: 4px 1600px 4px 90px;
-}
-
-header section span {
-    padding: 4px 0 4px 10px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-header nav {
-    height: 62px;
-    background-color: #F0A83E;
-}
-
-header nav img{
-    display: inline-block;
-    padding-left: 40px;
-    padding-right: 1124px;
-    padding-top: 20px;
-}
-
-header nav ul {
-    display: inline-block;
-}
-
-header nav ul li{
-    display: inline-block;
-    padding-left: 36px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-header nav ul li a {
-    color: #FFFFFF;
+.primer-header p {
+    margin-left: 100px;
+}
+
+.primer-header div span{
+    margin-right: 50px;
+}
+
+.segundo-header {
+    background-color: #F0A83E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.segundo-header img {
+    margin: 20px 50px;
+    width: 250px;
+}
+
+.segundo-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vh;
+    height: 100px;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.segundo-header nav ul li a {
+    padding: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
     text-decoration: none;
+    color: #FFFFFF; 
 }
 
-header nav ul li a i{
-    color: #F0A83E;
-    text-shadow: -1px -1px 0px #fff, 1px 1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff;
-}
-
-/* Termina el header, arranca el main */
-/* Seccion banner */
+/* Fin del header */
 
 .banner {
-    height: 409px;
+    display: flex;
+    flex-wrap: wrap;
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20%;
+    height: 409px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .banner div {
-    display: inline-block;
-    margin: 115px 11px 0 1550px;
-    padding: 16px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
 }
 
-.banner div p {
+.banner div .parrafo-1-banner {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 400;
     font-size: 30px;
-    line-height: 35px;
-    text-align: center;
+    font-weight: 400;
     color: #3C2313;
-}
-
-.banner .parrafo-2-banner {
-    margin-left: 1370px;
-    margin-top: 36px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: center;
-    color: #3C2313;
-}
-
-.banner a {
-    display: inline-block;
-    background: #F0A83E;
-    padding: 15px 23px 15px 23px;
-    margin-left: 1660px;
-    margin-top: 30px;
+    background-color: #FFFFFF;
+    padding: 15px;
     border-radius: 5px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
 }
 
-/* Seccion productos */
-
-.productos div {
-    text-align: center;
-    margin: 10px;
-}
-
-.productos h1 {
-    text-align: center;
-    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
-    color: #3C2313;
-}
-
-.productos ul {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.productos ul li {
-    display: inline-block;
-    padding: 0 10px 0 10px;
+.banner div .parrafo-2-banner {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 18px;
+    color: #3C2313;
 }
 
-.productos ul li a {
+.banner div a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #F0A83E;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.productos {
+    background-color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.productos .articulos-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productos .articulos-arriba img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.productos .articulos-arriba h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #3C2313;
+    margin-bottom: 16px;
+}
+
+.productos .articulos-arriba ul {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    list-style-type: none;
+    display: flex;
+    width: 16%;
+    justify-content: space-around;
+}
+
+.productos .articulos-arriba ul li span{
+    color: #666666;
+}
+
+.productos .articulos-arriba ul li a {
     text-decoration: none;
     color: #666666;
 }
 
+.productos .articulos-arriba ul li a:hover {
+    font-size: 20px;
+}
+
 .productos .articulos {
-    text-align: center;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
 }
 
 .productos .articulos article {
-    display: inline-block;
-    padding: 50px;
-    margin: 100px 15px 0 15px;
-    background-color: #FBFAF6; 
+    margin: 20px;
+    text-align: center;
+    background-color: #FBFAF6;
 }
 
 .productos .articulos article h4 {
-    margin-bottom: 18px;
-    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 18px;
-    color: #3C2313
+    padding-bottom: 7px;
+    color: #3C2313;
 }
 
 .productos .articulos article p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
+    padding-bottom: 10px;
     color: #F0A83E;
 }
 
-/* Seccion contacto */
-
 .contacto {
-    margin-top: 100px;
-}
-
-.contacto h2 {
-    font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 29px;
-    color: #3C2313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-bottom: 90px;
 }
 
 .contacto .formulario {
-    margin: 40px 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 275px;
+    margin-bottom: 35px;
+}
+
+.contacto .formulario h3 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .contacto .formulario input {
-    display: block;
-    padding: 15px 300px 15px 15px;
-    margin-bottom: 40px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 11px;
-    color: #ffffff;
     background-color: #3C2313;
+    width: 500px;
+    padding: 20px 14px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
     border-radius: 15px;
-    border: 0;
+    color: #FFFFFF;
 }
 
 .contacto .formulario input::placeholder {
     color: #ffffff;
     opacity: .8;
+    border: #3C2313;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
     opacity: 0;
+    cursor: text;
 }
 
-.contacto .submit-reset {
-    text-align: center;
-}
-
-.contacto .submit-reset input{
-    padding: 12px 32px 12px 32px;
-    margin: 15px 10px;
+.contacto .submit-reset input:nth-child(1) {
     background-color: #8A8787;
-    border-radius: 18px;
-    border: 0px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
     color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 38px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
 .contacto .submit-reset input:nth-child(2) {
     background-color: #F0A83E;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 50px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
-/* Seccion correo */
+/* Fin del main */
 
-.correo {
+footer .correo {
+    display: flex;
     background-color: #F0A83E;
-    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
-.correo div {
-    display: inline-block;
-    padding: 20px 0 20px;
-    margin-left: 30px;
-    margin-right: 20px;
+footer .correo .correo-izq {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 23%;
 }
 
-.correo div img {
-    display: inline-block;
-    width: 60px;
+footer .correo .correo-izq img {
+    width: 70px;
+    margin-left: 20px;
 }
 
-.correo p {
-    display: inline-block;
-    margin-right: 900px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+footer .correo .correo-izq p {
+    font-family: 'Roboto';
+    font-size: 24px;
     font-weight: 700;
-    font-size: 30px;
     color: #FFFFFF;
 }
 
-.correo input {
-    display: inline-block;
+footer .correo .correo-der {
+    margin-right: 50px;
 }
 
-.correo input[type=email] {
-    padding: 15px 240px 15px 15px;
+footer .correo .correo-der input[type=email] {
+    width: 450px;
+    padding: 16px 14px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #A0A0A0;
     background-color: #ffffff;
-    border-radius: 15px;
-    border: 0;
+    border-radius: 16px;
+    border: none;
 }
 
-.correo input[type=submit] {
-    padding: 12px 25px 12px 25px;
-    margin: 15px 10px;
-    background-color: #3C2313;;
-    border-radius: 18px;
-    border: 0px;
+footer .correo .correo-der input[type=submit] {
+    padding: 16px 14px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
     color: #FFFFFF;
-    cursor: pointer;
-}
-
-/* seccion datos */
-
-.datos {
     background-color: #3C2313;
-    padding-top: 15px;
-    padding-left: 30px;
-    max-height: 300px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
-.datos .datos-texto {
-    display: inline-block
+footer .datos {
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.datos .datos-texto p {
-    position: relative;
-    bottom: 20px;
-    padding-bottom: 30px;
-    padding-left: 10px;
+footer .datos .datos-iconos-texto {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 15%;
+    margin-left: 50px;
+}
+
+footer .datos .datos-iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .datos .datos-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .datos .datos-texto p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 15px;
     font-weight: 700;
-    font-size: 12px;  
     color: #8A8787;
 }
 
-.datos .datos-texto span {
+footer .datos .datos-texto span {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 700;
     color: #FFFFFF;
 }
 
-.datos .datos-logo {
-    position: relative;
-    margin-left: 1700px;
-    bottom: 170px;
+footer .datos .datos-logo img{
+    margin-right: 70px;
+    width: 250px;
 }
-
-.datos-logo img {
-    width: 200px;
-}
-
-/* Footer */
 
 footer {
-    background-color: #222222;
+    background-color: #F0A83E;
 }
 
 footer .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+}
+
+footer .redes div {
     padding: 10px;
 }
 
@@ -375,11 +387,16 @@ footer .redes a {
     color: #ffffff;
 }
 
-footer p {
-    text-align: center;
-    padding-bottom: 10px;
+footer .redes a:hover {
+    font-size: 45px;
+    filter: drop-shadow(5px 5px 2px #000000);
+}
+
+footer .redes p {
+    background-color: #222222;
+    padding: 10px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #FFFFFF;
-}
+}   

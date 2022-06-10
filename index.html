@@ -9,50 +9,47 @@
     <title>Petshop</title>
 </head>
 <body>
-    <header>
-        <section>
+    <header class="header">
+        <!-- <h1>PETSHOP</h1> Oculto -->
+        <section class="primer-header">
             <p>Grandes ofertas en comederos</p>
-            <span>Español <i class="fa-solid fa-angle-down"></i></span>
-            <span>ARG$ <i class="fa-solid fa-angle-down"></i></span>
+            <div>
+                <span>Español <i class="fa-solid fa-angle-down"></i></span>
+                <span>ARG$ <i class="fa-solid fa-angle-down"></i></span>
+            </div>
         </section>
-        <nav>
-                <img src="img/logoNav.png" alt="Logo gato y perro petshop">
+        <section class="segundo-header">
+            <img src="img/Logo (2).svg" alt="Logo gato y perro petshop">
+            <nav>
                 <ul>
-                    <li><a href="">
-                        <i class="fa-solid fa-paw"></i> Categorias
-                    </a></li>
-                    <li><a href="">
-                        <i class="fa-solid fa-paw"></i> Pets
-                    </a></li>
-                    <li><a href="">
-                        <i class="fa-solid fa-paw"></i> Nosotros
-                    </a></li>
-                    <li><a href="">
-                        <i class="fa-solid fa-paw"></i>     Contactanos
-                    </a></li>
+                    <li><a href=""><i class="fa-solid fa-paw"></i> Categorias</a></li>
+                    <li><a href=""><i class="fa-solid fa-paw"></i> Pets</a></li>
+                    <li><a href=""><i class="fa-solid fa-paw"></i> Nosotros</a></li>
+                    <li><a href=""><i class="fa-solid fa-paw"></i> Contactanos</a></li>
                 </ul>   
-        </nav>
+            </nav>
+        </section>
     </header>
-    <main>
+    <main class="main">
         <section class="banner">
             <div>
-                 <p>¡Es un placer tenerte aquí!</p>
+                 <p class="parrafo-1-banner">¡Es un placer tenerte aquí!</p>
+                 <p class="parrafo-2-banner">¡Comederos en descuento!</p>
+                 <a href="">COMEDEROS</a>
             </div>
-            <p class="parrafo-2-banner">¡Comederos en descuento!</p>
-            <a href="">COMEDEROS</a>
         </section>
         <section class="productos">
-            <div>
+            <div class="articulos-arriba">
                 <img src="img/pawprint 1.png" alt="logo patita">
+                <h2>Productos Destacados</h2>
+                <ul>
+                    <li><a href="">Comederos</a></li>
+                    <span>-</span>
+                    <li><a href="">Accesorios</a></li>
+                    <span>-</span>
+                    <li><a href="">Comida</a></li>
+                </ul>
             </div>
-            <h1>Productos Destacados</h1>
-            <ul>
-                <li><a href="">Comederos</a></li>
-                <span>-</span>
-                <li><a href="">Accesorios</a></li>
-                <span>-</span>
-                <li><a href="">Comida</a></li>
-            </ul>
             <div class="articulos">
                 <article>
                     <img src="img/churrasquito.png" alt="Churrasco">
@@ -72,8 +69,8 @@
             </div>
         </section>
         <section class="contacto">
-            <h2>Contáctanos</h2>
             <div class="formulario">
+                <h3>Contáctanos</h3>
                 <input type="text" placeholder="Nombre y Apellido">
                 <input type="email" placeholder="Ingresá tu correo electrónico">
                 <input type="number" placeholder="Teléfono">
@@ -83,30 +80,28 @@
                 <input type="submit" value="Enviar">
             </div>  
         </section>
+    </main>
+    <footer class="footer">
         <section class="correo">
-            <div>
+            <div class="correo-izq">
                 <img src="img/correo.png" alt="correo">
+                <p>Suscríbete para más novedades</p> 
             </div>
-            <div>
-                <p>Suscríbete para más novedades</p>
+            <div class="correo-der">
                 <input type="email" placeholder="Ingresá tu correo electrónico">
                 <input type="submit" value="Suscribirme">
             </div>
         </section>
         <section class="datos">
-            <div class="datos-iconos">
-                <img src="img/localidad.png" alt="localidad icono">
+            <div class="datos-iconos-texto">
+                <div class="datos-iconos">
+                    <img src="img/localidad.png" alt="localidad icono">
+                    <img src="img/correoIcono.png" alt="correo icono">
+                    <img src="img/telefono.png" alt="telefono icono">
+                </div>
                 <div class="datos-texto">
                     <p><span>Localidad</span><br>Calle - provincia</p>
-                </div>
-                <br>
-                <img src="img/telefono.png" alt="telefono icono">
-                <div class="datos-texto">
                     <p><span>Teléfono</span><br> Número de teléfono</p>
-                </div>
-                <br>
-                <img src="img/correoIcono.png" alt="correo icono">
-                <div class="datos-texto">
                     <p><span>Correo Electrónico</span><br> Dirección de correo</p>
                 </div>
             </div>
@@ -114,15 +109,15 @@
                 <img src="img/logoDatos.svg" alt="Logo gato y perro petshop">
             </div>
         </section>
-    </main>
-    <footer>
         <section class="redes">
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <div>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <p>Todos los derechos reservados Front End</p>
         </section>
-        <p>Todos los derechos reservados Front End</p>
     </footer>
 </body>
 </html>
