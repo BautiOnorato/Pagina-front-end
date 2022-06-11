@@ -43,7 +43,6 @@
 .segundo-header nav ul {
     display: flex;
     flex-wrap: wrap;
-    width: 80vh;
     height: 100px;
     list-style-type: none;
     justify-content: space-around;
@@ -276,12 +275,12 @@ footer .correo .correo-izq {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 23%;
 }
 
 footer .correo .correo-izq img {
     width: 70px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 footer .correo .correo-izq p {
@@ -331,7 +330,6 @@ footer .datos .datos-iconos-texto {
     display: flex;
     justify-content: space-around;
     height: 300px;
-    width: 15%;
     margin-left: 50px;
 }
 
@@ -339,6 +337,7 @@ footer .datos .datos-iconos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-right: 20px;
 }
 
 footer .datos .datos-texto {
